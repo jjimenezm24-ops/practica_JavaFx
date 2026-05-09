@@ -10,4 +10,23 @@
         <maven.compiler.release>24</maven.compiler.release>
         <exec.mainClass>com.mycompany.practica_javafx.Practica_JavaFx</exec.mainClass>
     </properties>
+    <dependencies>
+    <dependency>
+    <groupId>org.openjfx</groupId>
+    <artifactId>javafx-controls</artifactId>
+    <version>21</version>
+    </dependency>
+    </dependencies>
+    <build>
+        <plugins>
+    <plugin>
+    <groupId>org.openjfx</groupId>
+    <artifactId>javafx-maven-plugin</artifactId>
+    <version>0.0.8</version>
+    <configuration>
+    <mainClass>com.practica.productos.app.Main</mainClass>
+    </configuration>
+    </plugin>
+    </plugins>
+    </build>
 </project>
